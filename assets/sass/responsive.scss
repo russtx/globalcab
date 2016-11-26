@@ -1,0 +1,1149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 2, 2016, Aug 2, 2016 12:06:25 PM
+    Author     : Russ
+*/
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:320px iPhone5 Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:320px){
+    
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:375px iPhone6 Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:375px){
+    .header{
+        height: 194px;
+        #greenBox{
+            right:-33px;
+        }
+    }
+    .homeSection{
+        .passengerPickup{
+            min-height: 289px;
+            button{
+                top:182px;
+            }
+            p{
+                top:170px;
+            }
+        }
+        .productDelivery{
+            min-height: 289px;
+            button{
+                top:182px;
+            }
+            p{
+                top:170px;
+            }
+        }
+    }
+    .bannerArea{
+        min-height: 180px;
+    }
+    .footer {
+        .creditCards{
+            img{
+                margin: 10px 21px 0 0;
+            }
+        }
+    }
+    .bannerArea2{
+       min-height: 298px; 
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:400px  iPhone6 Plus Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:400px){
+    .bannerArea {
+        min-height: 196px;
+    }  
+    .bannerArea2 {
+        min-height: 317px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:568px   iPhone5 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:568px){
+    .header{
+        min-height:218px;
+        
+        .nav{
+            left:33px;
+        }
+        .headerText{
+            h3{
+                margin-top:14px;
+            }
+        }
+        .socialIcons{
+            @include span-columns(5 of 12);
+            @include shift(4 of 12);
+        }
+    }
+    
+    .homeSection{
+        .passengerPickup{
+            @include span-columns(6 of 12);
+            margin-right: 0;
+            width: 50%;
+        }
+        .productDelivery{
+            @include span-columns(6 of 12);
+            @include omega();
+            width: 50%;
+        }
+        .callArea{
+            @include span-columns(6 of 12);
+            margin-left:0;
+            padding-left: 30px;
+        }
+        .messageArea{
+            @include span-columns(6 of 12);
+            @include omega();
+            margin-left:0;
+            padding-left: 30px;
+        }
+    
+        .faresPrice{
+            @include span-columns(12 of 12);
+            
+            h3{
+                float: left;
+                margin-left: 27px;
+            }
+            h3:nth-child(2){
+                margin-left:20px;
+            }
+        }
+        .serviceArea{
+            span{
+                h2{
+                    margin:0 0 0 0;
+                }
+            }
+            .left{
+                @include span-columns(6 of 12);
+
+            }
+            .mapImage{
+                @include span-columns(6 of 12);
+                @include omega();
+                img{
+                    margin-top: 13px;
+                }
+            }
+        }
+        .pricingArea{
+            span{
+                h2{
+                    margin:0;
+                }
+            }
+            .pricing_title{
+                h3{
+                    a{
+                        margin: 0 0 0 0;
+                        font-size: 35px;
+                    }
+                }
+            }
+            .pricingImage{
+                @include span-columns(6 of 12);
+                margin-top: 76px;
+            }
+            .right{
+                @include span-columns(6 of 12);
+                @include omega();
+            }
+        }
+        .aboutArea{
+            .left{
+                @include span-columns(6 of 12);
+            }
+            .aboutImage{
+                @include span-columns(6 of 12);
+                @include omega();
+                margin-top:85px;
+            }
+        }
+        
+        
+    }
+    /*=============== passenger pickup ==================*/
+    .passengerSection {
+        @include outer-container;
+        min-height:500px;
+        .leftSide{
+            @include span-columns(6);
+        }
+        .rightSide{
+            @include span-columns(6);
+            @include omega();
+            img{
+                margin: 15px 0 0 -20px;
+                padding: 20px 0px 20px 20px;
+                height: 400px;
+                object-fit: cover;
+                object-position: 17% 20%;
+            }
+        }
+    }
+    
+    .bannerArea {
+        min-height: 250px;
+    }
+    .bannerArea2 {
+        min-height: 434px;
+    }
+    /*=============== safetySection ==================*/
+    .safetySection{
+        article.safetyContent{
+            @include span-columns(6);
+        }
+        .testimonialsBox{
+            @include span-columns(6);
+            @include omega();
+            margin-top:100px;
+            p{
+
+            }
+        }
+         .callArea{
+            @include span-columns(6 of 12);
+            margin-left:0;
+            padding-left: 30px;
+        }
+        .messageArea{
+            @include span-columns(6 of 12);
+            @include omega();
+            margin-left:0;
+            padding-left: 30px;
+        }
+    
+        .faresPrice{
+            @include span-columns(12 of 12);
+            
+            h3{
+                float: left;
+                margin-left: 27px;
+            }
+            h3:nth-child(2){
+                margin-left:20px;
+            }
+        }
+    }
+    /*=============== footer ==================*/
+    .footer {
+        min-height:100px;
+        .footerLogo{
+            margin-top:14px;
+            @include span-columns(3 of 12);
+            img{
+                margin: 0px auto 0 auto;
+                width:90px;
+            }
+        }
+        .copyright {
+            @include span-columns(6 of 12);
+            p{
+                    text-align: center;
+                    position: relative;
+                    top: 24px;
+                    padding: 0 0 0 0;
+                    margin: 5px 0 0 0;
+                    font-size: 10px;
+            }
+        }
+        .creditCards{
+            @include span-columns(6 of 12);
+            position:relative;
+            bottom:-19px;
+            left:92px;
+            img{
+                float: left;
+                margin: 0 13px 0 0;
+            }
+        }
+        span.google{
+            @include span-columns(3 of 12);
+            @include omega();
+            position: relative;
+            left: 0px;
+            top:0px;
+            img{
+                width:100px;
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:660px iPhone6 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:660px){
+    .header {
+        min-height: 235px;
+    }
+    .homeSection {
+        .aboutArea {
+            .aboutImage{
+                    margin-top: 36px;
+            } 
+        }
+    }
+    .footer {
+        .creditCards{
+            left: 118px;
+        }
+        .creditCards span.google {
+            img{
+                width:75px;
+            }
+        }
+    }
+    .bannerArea {
+        min-height: 310px;
+    }
+    .safetySection{
+        .safetyContent{
+            ul{
+                li{
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .bannerArea2 {
+        min-height: 506px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:736px   iPhone6 Plus Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:736px){
+    .header{
+        
+        .headerText {
+            h3{
+                font-size:10px;
+                letter-spacing: 1px;
+                
+            }
+        }
+        .socialIcons{
+            @include span-columns(4 of 12);
+            @include shift(7 of 12);
+            a{
+                img{
+                    padding-right:10px;
+                }
+            }
+        }
+    }
+    .homeSection{
+        .callContainer{
+            .serviceBox{
+                p{
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+            .callArea{
+                @include span-columns(6);
+                margin-left:0;
+                .circle{
+                    margin-left:12%;
+                }
+                p{
+                    font-size: 14px;
+                }
+                span{
+                    p{
+                        font-size:20px;
+                    }
+                }
+            }
+            .messageArea{
+                @include span-columns(6);
+                @include omega();
+                margin-left:0;
+                p{
+                    font-size: 14px;
+                }
+                span{
+                    p{
+                        font-size:18px;
+                    }
+                } 
+            }
+            .faresPrice{
+                h3{
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                    
+                    span{
+                        font-size: 22px;
+                    }
+                }
+                h3:first-child{
+                    margin-left: 55px;
+                }
+            }
+        }
+        .serviceArea{
+            span{
+                h2{
+                    font-size: 11px;
+                }
+            }
+            .mapImage{
+                img{
+                    margin-top: -16px;
+                }    
+            }
+            .description_service{
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+        .pricingArea{
+            .pricingImage{
+                margin-top: 34px;
+            }
+            .description_pricing{
+                p{
+                    font-size: 14px;
+                }
+            }
+            .right {
+                h3{
+                    a{
+                        span{
+                            font-size:22px;
+                        }
+                    }
+                }
+                .pricing_title {
+                    h3 {
+                        a{
+                            font-size: 34px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .aboutArea {
+            .description_about {
+                p{
+                    font-size: 14px;
+                }
+            }
+            .aboutImage{
+                margin-top:42px;
+            }
+        }
+        
+    }
+    /*=============== passenger pickup ==================*/
+    .passengerSection {
+        .rightSide {
+            img{
+                height: 500px;
+            }
+        }
+    }
+    
+    .bannerArea {
+        min-height: 325px;
+    }
+    
+    /*=============== safetySection ==================*/
+    .safetySection{
+        .serviceBox{
+            p{
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+        .callArea{
+            .circle{
+                margin-left:12%;
+            }
+            p{
+                font-size: 14px;
+            }
+            span{
+                p{
+                    font-size:20px;
+                }
+            }
+        }
+        .messageArea{
+            p{
+                font-size: 14px;
+            }
+            span{
+                p{
+                    font-size:18px;
+                }
+            } 
+        }
+        .faresPrice{
+            h3{
+                font-size: 17px;
+                letter-spacing: 1px;
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    
+    /*=============== footer ==================*/
+    .footer{
+        .footerLogo{
+            img{
+                width:100px;
+            }
+        }
+        .creditCards{
+            left:138px;
+            
+        }
+        span.google{
+                img{
+                    width:140px;
+                }
+            }
+    }
+    .bannerArea2 {
+        min-height: 565px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:768px iPad Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:768px){
+    .header{
+        .logo{
+            @include span-columns(2 of 12);
+            @include shift(0 of 12);
+            img{
+                height: 60px;
+                width:auto;
+                position: relative;
+                top: 10px;
+                left: 19px;
+            }
+        }
+        .headerText{
+            h3{
+                font-size:12px;
+                line-height: 24px;
+                letter-spacing: 2px;
+                position: relative;
+                top: -27px;
+            }
+        }
+        .socialIcons{
+            @include span-columns(4 of 12);
+            @include shift(8 of 12);
+            margin-top: -29px; 
+        }
+    }
+    nav{
+        ul.menu{
+            display:none
+        }
+        ul.upper-menu{
+            @include span-columns(9 of 12);
+            @include omega();
+            display: flex;
+            list-style:none;
+            margin-top:51px;
+            position:relative;
+            left:0px;
+            top:-25px;
+            li{
+               background:url("./assets/images/down-caret.png") no-repeat center right;
+               width: 122px;
+                padding:5px;
+                text-align:right;
+                a{
+                    color:#fff;
+                    font-size:13px;
+                    position: relative;
+                    right: 14px;
+                    font-family: MuseoSans300;    
+                }    
+            }
+            li:after{
+                
+            }
+            
+            li:last-child{
+                background:none;
+                width: 205px;
+            }
+        }
+            
+    }
+    /*============================ passenger pickup =============================*/
+    .passengerSection{
+        min-height: 580px;
+        .rightSide{
+            img{
+                height: 567px;
+                object-position: 24% 20%;
+                margin: 5px 0 0 -20px;
+            }
+        }
+    }
+    /*============================ safetySection =============================*/
+    .safetySection{
+        
+    }
+    /*============================ career =============================*/
+    .left-third{
+        @include span-columns(4);
+        clear:none !important;
+    }
+    .center-third{
+        @include span-columns(4);
+        clear:none !important;
+    }
+    .right-third{
+        @include span-columns(4);
+        @include omega(); 
+        clear:right !important;
+    }
+    .gform_wrapper .top_label input.small, .gform_wrapper .top_label select.small {
+        width: 75% !important;
+    }
+    .left-half{
+       @include span-columns(6);
+        clear:none !important; 
+    }
+    .right-half{
+        @include span-columns(6);
+        @include omega(); 
+        clear:right !important;
+    }
+    .one-of-four{
+        @include span-columns(3);
+        clear:none !important;
+    }
+    .two-of-four{
+        @include span-columns(3);
+        clear:none !important;
+    }
+    .three-of-four{
+        @include span-columns(3);
+        clear:none !important;
+    }
+    .four-of-four{
+        @include span-columns(3);
+        @include omega(); 
+        clear:right !important;
+    }
+    .gform_wrapper .top_label input.large.datepicker, .gform_wrapper .top_label input.medium.datepicker, .gform_wrapper .top_label input.small.datepicker {
+        width: 100px !important;
+    }
+    /*============================ Rates =============================*/
+    .rateSection {
+        h2{
+          font-size: 30px;  
+        }
+        li.block:nth-child(1) {
+            padding-left: 63px;
+        }
+    }
+    .bannerArea2 {
+        min-height: 585px;
+    }
+    
+    /*============================ footer =============================*/
+    .footer {
+        .footerLogo{
+            img{
+                width: 90px;
+                margin: 5px auto 0 auto;
+            }
+        }
+        .creditCards {
+            span.google {
+                img{
+                    width:86px;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1024px       ipad Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1024px){
+    .header{
+        .logo{
+            img{
+                height:80px;
+                left:100px;
+                
+            }
+        }
+        .nav{
+            ul.upper-menu{
+                 
+                left:67px;
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .headerText{
+            h3{
+                font-size: 14px;
+                letter-spacing: 2px;
+                top:-5px;
+                padding: 0 40px;
+            }
+        }
+    }    
+    .homeSection{
+        .passengerPickup{
+            min-height:385px;
+            button{
+                top:265px;
+                h3{
+                    font-size: 30px;
+                    color: #fff;
+                    padding: 0 0;
+                    margin: 4px 10px;
+                }
+            }
+            p{
+                font-size:24px;
+                top:247px;
+            }
+        }
+        .productDelivery{
+            min-height: 385px;
+            button{
+                top:265px;
+                h3{
+                    font-size: 30px;
+                    color: #fff;
+                    padding: 0 0;
+                    margin: 4px 10px;
+                }
+            }
+            p{
+                font-size:24px;
+                top:247px;
+            }
+        }
+        .serviceBox{
+            h2{
+                font-size:30px;
+            }
+            p{
+                font-size:20px;
+            }
+        }
+        .callArea{
+            .circle{
+                margin-left:29%;
+            }
+        }
+        .faresPrice{
+            h3{
+                font-size: 20px;
+                margin-left: 150px;
+                span{
+                    font-size: 30px;
+                }
+            }
+        }
+       
+        .callContainer {
+            .callArea {
+                .circle {
+                    margin-left: 35%;
+                        
+                }
+            }
+            .faresPrice h3:first-child {
+                margin-left: 188px;
+            }
+        }
+        .serviceArea {
+            span{
+                h2{
+                    font-size: 12px;
+                    padding-left: 50px;
+                    position: relative;
+                    top: 45px;
+                }
+            }
+            .left {
+                padding-left:50px;
+                .service_title {
+                    h3 {
+                        a{
+                            font-size: 30px;
+                            position: relative;
+                            top:45px;
+                        }
+                    }
+                }
+                .description_service{
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        position: relative;
+                        top: 45px;
+                    }
+                }
+            }
+        }
+        .pricingArea{
+            span{
+                h2{
+                    font-size: 12px;
+                    position: relative;
+                    top: 45px;
+                    padding-left:0;
+                }
+            }
+            .right{
+                h3{
+                    a{
+                        font-size: 30px;
+                        position: relative;
+                        top:45px;
+                    }
+                }
+                .description_pricing{
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        position: relative;
+                        top: 45px;
+                    }
+                }
+            }
+        }
+        .aboutArea{
+            span{
+                h2{
+                    font-size: 12px;
+                    padding-left: 50px;
+                    position: relative;
+                    top: 25px;
+                }
+            }
+            .left{
+                padding-left:50px;
+                .about_title{
+                    h3{
+                        a{
+                            font-size: 30px;
+                            position: relative;
+                            top:25px;
+                        }
+                    }
+                    
+                }
+                .description_about{
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        position: relative;
+                        top: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .bannerArea {
+        min-height: 460px;
+    }
+    
+    .safetySection{
+        .serviceBox{
+            h2{
+                font-size:30px;
+            }
+            p{
+                font-size:20px;
+            }
+        }
+        .callArea{
+            .circle{
+                margin-left:29%;
+            }
+        }
+        .faresPrice{
+            h3{
+                font-size: 20px;
+                margin-left: 150px;
+                span{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+     /*============================ Rates =============================*/
+    .bannerArea2 {
+        min-height: 775px;
+    }
+    .rateSection li.block:nth-child(1) {
+        padding-left: 120px;
+    }
+    
+    
+     /*============================ footer =============================*/
+    
+    .footer{
+        min-height:130px;
+        .footerLogo{
+            margin-top:3px;
+            img{
+                width:115px;
+            }
+        }
+        .copyright{
+            p{
+                text-align: center;
+                margin-top:14px;
+            }
+        }
+        .creditCards{
+            img{
+                width: 47px;
+                margin: -16px 2px 0 38px;
+                float:left;
+            }
+            span.google {
+                img  {
+                    width:113px;
+                }
+            }  
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1140px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1140px){
+    .header{
+        min-height:248px;
+        #greenBox{
+            //right:-16px;
+        }
+        .nav{
+            ul.upper-menu{
+                
+                li{
+                    width:140px;
+                    a{
+                        font-size:17px;
+                    }
+                }
+                li:last-child{
+                    width:200px;
+                }
+            }
+        }
+        .headerText{
+            h3{
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+        }
+        .socialIcons{
+            position: relative;
+            right:-60px;
+        }
+    }
+    .homeSection{
+        .passengerPickup{
+            min-height: 450px;
+            button{
+                top:330px;
+            }
+            p{
+                top:324px;
+            }
+        }
+        .productDelivery{
+            min-height: 450px;
+            button{
+                top:330px;
+            }
+            p{
+                top:324px;
+            }
+        }
+        .callContainer{
+            .serviceBox {
+                h2{
+                    font-size:30px;
+                    margin-bottom:0;
+                }
+                p{
+                    font-size: 18px;
+                    margin-top: 0;
+                    line-height: 30px;
+                }
+            }
+            .callArea{
+                .circle{
+                    margin-left:40%
+                }
+            }
+            .faresPrice{
+                h3{
+                    margin-left:164px;
+                }
+            }
+        }
+    }
+    .footerContainer{
+        .footer{
+            .footerLogo{
+                img{
+                    width:150px;
+                }
+            }
+            span.google{
+                img{
+                    width:220px;
+                }
+            }
+            .copyright{
+                p{
+                    font-size: 12px;
+                }
+            }
+            .creditCards{
+                left:176px;
+            }
+        }
+    }
+    .bannerArea {
+        min-height: 535px;
+    }
+    .saftySection{
+        .callArea{
+            .circle{
+                margin-left:40%
+            }
+        }
+        .faresPrice{
+            h3{
+                margin-left:240px;
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1240px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1240px){
+    .homeSection {
+        .callContainer {
+            .callArea {
+                .circle {
+                   // margin-left: 45%;
+
+                }
+            }
+    
+        }
+        .callContainer {
+            .faresPrice {
+                h3{
+                   //margin-left: 173px; 
+                }
+                h3:first-child{
+                   //margin-left: 285px; 
+                }
+            }
+        }
+    }
+    
+}
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1400px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1400px){
+    .homeSection {
+        .callContainer {
+            .callArea {
+                .circle {
+                    //margin-left: 50%;
+
+                }
+            }
+    
+        }
+        .callContainer {
+            .faresPrice {
+                h3{
+                    
+                }
+                h3:first-child{
+                  // margin-left: 370px; 
+                }
+            }
+        }
+    }
+}
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1700px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1700px){
+    .homeSection {
+        .callContainer {
+            .callArea {
+                .circle {
+                   // margin-left: 60%;
+
+                }
+            }
+    
+        }
+        .callContainer {
+            .faresPrice {
+                h3{
+                    
+                }
+                h3:first-child{
+                  // margin-left: 540px; 
+                }
+            }
+        }
+    }
+}
